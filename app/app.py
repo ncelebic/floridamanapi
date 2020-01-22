@@ -26,6 +26,7 @@ def getfloridaman():
     parsed_date = parse(rawdate)
     actualdate = parsed_date.strftime('%B %d')
     search_string = "Florida Man %s %s" % (actualdate, blacklist_string)
+    print(search_string)
     for result in search(search_string, num=1, stop=1):
         url = result
         break
